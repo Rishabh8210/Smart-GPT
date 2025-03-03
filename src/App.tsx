@@ -1,10 +1,17 @@
+import ConversationPanel from './pages/ConversationPanel'
+import Homepage from './pages/Homepage'
+import { BrowserRouter, Routes, Route } from 'react-router'
+
 import './App.css'
 
 function App() {
   return (
-    <>
-      <h1 className=''>Home</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <Homepage /> } />
+        <Route path='/conversation' element={ <ConversationPanel /> } />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

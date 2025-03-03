@@ -1,0 +1,22 @@
+export const randomChats = [
+    { name: 'TS vs TS + SWC' },
+    { name: 'Multi GPT Aggregator HLD' },
+    { name: 'Best Name for Chat Component' },
+    { name: 'VS Code Indentation Default to 4' },
+    { name: 'Next.js Page vs Index.tsx' },
+    { name: 'App Router vs Page Router' },
+    { name: 'Routes vs Router vs Route' },
+    { name: 'Default Export Multiple Components' },
+    { name: 'Folder Structure for React Projects' },
+    { name: 'Next.js Folder Naming Conventions' },
+    { name: 'React Component Wrapper vs Direct Usage' },
+    { name: 'Best Practices for Organizing Components' },
+    { name: 'Serve: Running HTML Locally' },
+    { name: 'Difference Between SWC and TypeScript' },
+    { name: 'React Router Nested Routing' },
+    { name: 'Managing Large-Scale Next.js Projects' },
+    { name: 'Backend-Frontend Integration Strategies' },
+    { name: 'React vs Next.js for Scalable Apps' },
+    { name: 'Should I Use a Wrapper Component?' },
+    { name: 'Best Practices for Page-Level Components' }
+];
