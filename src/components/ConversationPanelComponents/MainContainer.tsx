@@ -30,7 +30,7 @@ export const MainContainer = () => {
             } else {
               return (
                 <div className="h-fit w-[50vw] flex justify-end">
-                  <div className="h-fit w-fit flex justify-end px-4 py-2 bg-zinc-700 rounded-2xl">
+                  <div className="h-fit w-[60%] flex px-4 py-2 bg-zinc-700 rounded-2xl">
                     <p className="">{chat.content}</p>
                   </div>
                 </div>
