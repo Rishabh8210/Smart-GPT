@@ -1,5 +1,5 @@
 import { IPropData } from "../SidebarPanelComponent"
-import MainContainer from "./MainContainer"
+import { MainContainer } from "./MainContainer"
 import { Navbar } from "./Navbar"
 
 export const ConversationPanelComponent = ({ trigger, setTrigger }: IPropData) => {
