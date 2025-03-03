@@ -1,9 +1,5 @@
 
-interface IPropData {
-  trigger: boolean,
-  setTrigger: (val:boolean) => void
-}
-
+import { IPropData } from "./index"
 export const Navbar = ({trigger, setTrigger}: IPropData) => {
   return (
     <div className="w-full h-12 p-2.5 flex justify-between items-center transition-all">
