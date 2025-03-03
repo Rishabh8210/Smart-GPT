@@ -1,6 +1,6 @@
 import { useState } from "react"
 interface IChatInput{
-  setChats: (val:number[]) => void
+  setChats: (val:any) => void
 }
 export const InputBtn = ({setChats}:IChatInput) => {
   const [searchText, setSearchText] = useState('')
@@ -14,7 +14,8 @@ export const InputBtn = ({setChats}:IChatInput) => {
         value={searchText}
       />
       <button className=" absolute right-2 bottom-2 h-fit w-fit p-1.5 bg-white rounded-full cursor-pointer" onClick={() => {
-          setChats([22])
+          setChats((prev:any) => [...prev, {name:'user', content:searchText}])
+          setChats((prev:any) => [...prev, {name:'gpt', content:'Js is a widely used programming language which is use to manipulte websites, pages'}])
           setSearchText('');
         }}>
         <img className="w-6" src="search.svg" />
