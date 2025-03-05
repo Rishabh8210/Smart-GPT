@@ -5,7 +5,11 @@ export const useChatScroll = (message:any[]) => {
   
   useEffect(() => {
     if(ref.current){
-      ref.current.scrollTop = ref.current.scrollHeight;
+      const { scrollHeight, clientHeight } = ref.current;
+      ref.current.scrollTo({
+        top: scrollHeight - clientHeight*1.5,
+        behavior: "smooth", // Smooth scrolling effect
+      });
     }
   }, [message])
   

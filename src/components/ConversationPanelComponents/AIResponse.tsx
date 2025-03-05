@@ -1,7 +1,16 @@
+import { useEffect, useState } from "react"
 import { ResonceShimmerText } from "../ShimmerEffectComponent/ResonceShimmerText"
 
 export const AIResponse = ({ chat }: any) => {
+  const [isResponseReceived, setResponseReceived] = useState(false);
 
+  useEffect(() => {
+    const id = setTimeout(() => {
+      setResponseReceived(!isResponseReceived);
+      clearTimeout(id);
+    }, 3000)
+  }, [])
+  if(!isResponseReceived)
   return <ResonceShimmerText />
 
   return (
