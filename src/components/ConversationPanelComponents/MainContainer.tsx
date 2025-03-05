@@ -30,7 +30,7 @@ export const MainContainer = () => {
               )
             } else {
               return (
-                <AIResponse key={ind} chat={chat} />
+                <AIResponse key={ind} ref={ref} chat={chat} />
               )
             }
 
