@@ -16,6 +16,7 @@ const ResponseFullView = ({setTrigger} : IResponseFullView) => {
         <div className='response-style h-full w-full flex justify-center overflow-y-scroll'>
             <div className='w-[70%] h-full'>
                 <ReactMarkdown>{dmmyLongContent}</ReactMarkdown>
+                <div className='h-40'></div>    
             </div>
         </div>
     </div>
