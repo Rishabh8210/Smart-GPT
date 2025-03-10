@@ -20,7 +20,7 @@ export const ResponseBox = () => {
 					})
 				}
 			</div>
-			{isResponseFullViewOpen != -1 && <ResponseFullView trigger = {isResponseFullViewOpen} setTrigger = {setResponseFullView}/>}
+			{isResponseFullViewOpen != -1 && <ResponseFullView setTrigger = {setResponseFullView}/>}
 		</>
 	)
 }
