@@ -7,8 +7,8 @@ export const useChatScroll = (message:any[]) => {
     if(ref.current){
       const { scrollHeight, clientHeight } = ref.current;
       ref.current.scrollTo({
-        top: scrollHeight - clientHeight*1.5,
-        behavior: "smooth", // Smooth scrolling effect
+        top: scrollHeight - clientHeight*1.25,
+        behavior: "smooth",
       });
     }
   }, [message])

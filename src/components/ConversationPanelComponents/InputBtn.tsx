@@ -9,7 +9,7 @@ export const InputBtn = ({setChats}:IChatInput) => {
       <textarea
         className="h-24 text-[16px] w-full p-2 text-lg rounded-2xl focus:outline-0 text-white 
                resize-none overflow-auto bg-transparent"
-        placeholder="Ask anything"
+        placeholder="Ask anything..."
         onChange={(e) => setSearchText(e.target.value)}
         value={searchText}
       />

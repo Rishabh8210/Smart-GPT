@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { ResonceShimmerText } from "../ShimmerEffectComponent/ResonceShimmerText"
-import { ResponseShimmerBox } from "../ShimmerEffectComponent/ResponseShimmerBox";
+import { ResponseBox } from "./ResponseBox";
 
 export const AIResponse = ({ chat, ref }: any) => {
   const [isResponseReceived, setResponseReceived] = useState(false);
@@ -23,7 +23,7 @@ export const AIResponse = ({ chat, ref }: any) => {
       <div className="h-fit w-full flex px-4 py-2 ">
         <p className="w-full text-[16px] break-words">{chat.content}</p>
       </div>
-      <ResponseShimmerBox />
+      <ResponseBox />
     </div>
   )
 }

@@ -1,0 +1,25 @@
+.response-style h3{
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.response-style p{
+    font-size: 1em;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    line-height: 1.8em;
+}
+
+.response-style ul{
+    /* font-size: 1.1em; */
+    padding-left: 10px;
+}
+
+.response-style li{
+    /* font-size: 1.1em; */
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    line-height: 1.5rem;
+   
+    list-style: inside;
+}
